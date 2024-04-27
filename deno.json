@@ -1,6 +1,7 @@
 {
     "tasks": {
-        "start": "deno run --allow-net --allow-env --allow-read server.ts"
+        "start": "deno run --allow-net --allow-env --allow-read server.ts",
+        "dev": "deno run --allow-net --allow-env --allow-read --watch server.ts"
     },
     "imports": {
         "http/": "https://deno.land/std@0.150.0/http/",
