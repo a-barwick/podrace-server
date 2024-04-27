@@ -1,0 +1,42 @@
+# Deno-specific files
+.deno_plugins/
+.deno/
+
+# Cache files
+**/deno-dir
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Output directories
+dist/
+build/
+
+# Test coverage files
+coverage/
+
+# Misc
+.tmp/
+.cache/
+temp/
+tmp/

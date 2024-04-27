@@ -1,0 +1,56 @@
+{
+    "tasks": {
+        "start": "deno run --allow-net --allow-env --allow-read server.ts"
+    },
+    "imports": {
+        "http/": "https://deno.land/std@0.150.0/http/",
+        "oak": "https://deno.land/x/oak@v16.0.0/mod.ts",
+        "dotenv": "https://deno.land/std@0.223.0/dotenv/mod.ts",
+        "postgres": "https://deno.land/x/postgres@0.19.3/mod.ts"
+    },
+    "compilerOptions": {
+        "allowJs": true,
+        "lib": [
+            "deno.window"
+        ],
+        "strict": true
+    },
+    "lint": {
+        "files": {
+            "include": [
+                "src/"
+            ],
+            "exclude": [
+                "src/testdata/"
+            ]
+        },
+        "rules": {
+            "tags": [
+                "recommended"
+            ],
+            "include": [
+                "ban-untagged-todo"
+            ],
+            "exclude": [
+                "no-unused-vars"
+            ]
+        }
+    },
+    "fmt": {
+        "files": {
+            "include": [
+                "src/"
+            ],
+            "exclude": [
+                "src/testdata/"
+            ]
+        },
+        "options": {
+            "useTabs": true,
+            "lineWidth": 80,
+            "indentWidth": 4,
+            "singleQuote": true,
+            "proseWrap": "always"
+        }
+    }
+}
