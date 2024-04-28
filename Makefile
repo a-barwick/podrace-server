@@ -13,6 +13,7 @@ db-reset:
 	@deno run -A db/migration.ts --down
 	@deno run -A db/migration.ts --up
 	@deno run -A db/migration.ts --seed
+	@redis-cli flushall
 
 dev:
 	deno task dev
